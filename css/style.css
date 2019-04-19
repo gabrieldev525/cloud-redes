@@ -10,13 +10,24 @@ body, html { height: 100%; width: 100%; margin: 0; padding: 0; }
 
 #interface { display: flex; justify-content: center; flex-direction: row; height: 80%; width: 100%; margin-top: 5%; }
 
+/*left side*/
 #left-side { width: 60%; margin: 1%;}
+/*news 2 by row*/
+.div-news { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; }
+.div-news .content { width: 40%; margin: 0 1%; }
+.div-news img { width: 100%; }
+/*news 1 by row*/
+.full-news { display: block; width: 100%; }
+.full-news .content { width: 90%; }
+.full-news .content img { width: 100%; }
+
 /*right side*/
 #right-side { width: 30%; border-left: 2px solid #ccc; padding-left: 2%; margin: 1%; }
-#right-side .social-media { width: 100%; display: flex; flex-direction: row; justify-content: center;flex-wrap: wrap; }
-#right-side i { font-size: 2em; margin: 3%; cursor: pointer; }
+#right-side .social-media {  width: 100%; display: flex; flex-direction: row; justify-content: center;flex-wrap: wrap; }
+#right-side i { transition: 0.5s; font-size: 2em; margin: 3%; cursor: pointer; }
+#right-side i:hover { transform: scale(1.2); }
 #right-side #facebook { color: rgb(18, 81, 163);  }
 #right-side #twitter { color: rgb(71, 220, 240); }
-#right-side #instagram { background: linear-gradient(to right, rgb(248, 232, 86), rgb(102, 9, 105)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+#right-side #instagram { background: linear-gradient(to right top, rgb(248, 183, 86) 15%, rgb(102, 9, 105), rgb(209, 30, 185)); background-clip: text; -webkit-text-fill-color: transparent; }
 #right-side #whatsapp { color: rgb(14, 163, 34); }
 #right-side #youtube { color: #F00; }
