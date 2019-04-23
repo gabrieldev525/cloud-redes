@@ -2,30 +2,43 @@ body, html { height: 100%; width: 100%; margin: 0; padding: 0; }
 * { font-family: sans-serif; }
 
 /*menu*/
-#menu { width: 100%; position: fixed; top: 0; background-color: #35a3cc;  }
+.menu-style { background-color: #fff; border-bottom: 2px solid #35a3cc; }
+#menu { transition: 0.5s; z-index: 2; width: 100%; position: fixed; top: 0; background-color: none;  }
 #menu ul { padding: 0; }
 #menu li.menu-item { transition: 0.5s; display: inline-block; margin-left: 1%; cursor: pointer; }
 #menu li.menu-item:hover { border-bottom: 2px solid #000; }
 #menu li.menu-item a { color: #fff; text-decoration: none; }
 
+/* slide */
+.slide { width: 100%;  }
+.slide img { width: 100%; }
+.slide .content { width: 100%;background-color: rgba(0, 0, 0, .4); position: absolute; top: 0; }
+
 #interface { padding-bottom: 8%; display: flex; justify-content: center; flex-direction: row; width: 100%; margin-top: 5%; }
 
-.title { color: rgb(24, 24, 24); display: block; text-align: center; text-decoration: none; font-size: 1.4em; margin-top: 2%; font-weight: 900; }
+.title { color: rgb(24, 24, 24); display: block; text-align: center; text-decoration: none; font-size: 1.1em; margin-top: 2%; font-weight: 700; }
 
 /*left side*/
 #left-side { width: 60%; margin: 1%;}
+#left-side .content img { cursor: pointer; transition: 0.5s; }
+#left-side .content img:hover { transform: scale(1.05); }
+
 /*news 2 by row*/
 .div-news { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; margin-top: 2%; }
 .div-news .content { width: 40%; margin: 0 1%; }
 
-.div-news img { width: 100%; }
+.div-news img { width: 100%; border-radius: 10px; }
 /*news 1 by row*/
 .full-news { display: block; width: 100%; margin-top: 2%; }
 .full-news .content { width: 90%; display: block; margin: auto; }
-.full-news .content img { width: 100%; }
+.full-news .content img { width: 80%; display: block; margin: auto; border-radius: 10px;}
+
+
 /*right side*/
 
 #right-side { width: 30%; border-left: 2px solid #ccc; padding-left: 2%; margin: 1%; }
+
+/* social media */
 #right-side .social-media {  width: 100%; display: flex; flex-direction: row; justify-content: center;flex-wrap: wrap; }
 #right-side i { transition: 0.5s; font-size: 2em; margin: 3%; cursor: pointer; }
 #right-side i:hover { transform: scale(1.2); }
@@ -35,6 +48,12 @@ body, html { height: 100%; width: 100%; margin: 0; padding: 0; }
 #right-side #whatsapp { color: rgb(14, 163, 34); }
 #right-side #youtube { color: #F00; }
 
+/* content */
+#right-side .content { display: block; margin-top: 5%; border-top: 1px solid #ccc; }
+#right-side .content .item { display: block; width: 100%; margin: 5% 0; }
+#right-side .content .item img { width: 90%; display: block; margin: 2% auto; border-radius: 10px; cursor: pointer; transition: 0.5s; }
+#right-side .content .item img:hover { transform: scale(1.05); }
+
 /* footer */
-footer { display: block; position: fixed; bottom: 0; width: 100%; text-align: center; background-color: #fff; border-top: 2px solid #35a3cc; padding: 2% 0;} 
-footer a { color: #000; text-decoration: none; font-size: 1em; }
+footer { display: block; position: fixed; bottom: 0; width: 100%; text-align: center; background-color: #000; border-top: 2px solid #35a3cc; padding: 2% 0;} 
+footer a { color: #fff; text-decoration: none; font-size: 1em; }
