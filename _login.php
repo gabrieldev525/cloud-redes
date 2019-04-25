@@ -6,6 +6,8 @@
    $email = isset($_POST['email']) ? $_POST['email'] : null;
    $password = isset($_POST['password']) ? $_POST['password'] : null;
 
+   // $password = md5($password);
+
    //get the current user data
    $query = "SELECT * FROM users WHERE email='$email' AND password='$password';";
    $result = mysqli_query($conn, $query);
@@ -26,7 +28,7 @@
          
          echo "logged sucesfully";
 
-         header("location: panel.php");
+         header("location: index.php");
       }
    } else {
       //header("location: index.php");

@@ -18,6 +18,22 @@
                 <li class="menu-item"><a href="">Noticias</a></li>
                 <li class="menu-item"><a href="">Sobre</a></li>
                 <li class="menu-item"><a href="">Contato</a></li>
+
+                <!-- account item -->
+                <?php if(isset($_COOKIE['logged'])) { ?>
+                    <li class="account-item menu-item" id="logout-item"><a href="logout.php">Sair</a></li>
+                    <!-- <div id="account">
+                        <div id="dropdown">
+                            <li class="account-item menu-item" id="icon-item"><i class="fas fa-user"></i></li>
+                            <div class="content">
+                                <ul><li><a href="">Teste</a></li></ul>
+                            </div>
+                        </div>
+                    </div> -->
+                <?php } else { ?>
+                    <li class="account-item menu-item" id="register-item"><a href="register.php">Cadastrar</a></li>
+                    <li class="account-item menu-item" id="login-item"><a href="login.php">Entrar</a></li>
+                <?php } ?>
             </ul>
         </div>
 

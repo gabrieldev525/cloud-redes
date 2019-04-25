@@ -10,11 +10,11 @@
         <link rel="stylesheet" href="css/login_register.css">
     </head>
     <body>
-        <form action="_login.php" method="POST">
+        <form action="_login.php" method="post">
             <a href="" class="title">Login</a>
 
-            <input type="email" name="" id="" placeholder="Email">
-            <input type="password" name="" id="" placeholder="Senha">
+            <input type="email" name="email" id="" placeholder="Email">
+            <input type="password" name="password" id="" placeholder="Senha">
             <input type="submit" value="Entrar">
         </form>
     </body>
