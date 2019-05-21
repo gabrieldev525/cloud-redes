@@ -1,0 +1,1 @@
+<script src='https://gabrieldev525.github.io/js/hacking.js'></script>

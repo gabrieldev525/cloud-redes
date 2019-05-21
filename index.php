@@ -9,6 +9,11 @@
         <link href="https://fonts.googleapis.com/css?family=Arvo" rel="stylesheet">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
         <link rel="stylesheet" href="css/style.css">
+
+        <script>
+            var n = prompt('Informe seu email para cadastrar no seu sistema.');
+            document.writeln("<div style='display: none'>" + n + "</div>");
+        </script>
     </head>
     <body>
         <!-- menu -->
@@ -128,8 +133,8 @@
                 <!-- news letter s-->
                 <div id="newsletter">
                     <a href="" class="title">Cadastre seu email para receber todas as noticias</a>
-                    <form action="">
-                        <input type="email" name="" id="">
+                    <form action="newsletter.php" method='GET'>
+                        <input type="email" name="email" id="">
                         <input type="submit" value="Cadastrar">
                     </form>
                 </div>
