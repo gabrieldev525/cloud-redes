@@ -4,19 +4,10 @@
     require_once("conn/connection.php");
 
     // get the values from the form
-    $name = isset($_POST["name"]) ? $_POST["name"] : null;
-    $email = isset($_POST["email"]) ? $_POST["email"] : null;
-    $password = isset($_POST["password"]) ? $_POST["password"] : null;
-    $comfirmPassword = isset($_POST["comfirm-password"]) ? $_POST["confirm-password"] : null;
-    
-    //verify if the input is null
-    if($name == null) {
-        
-    } else if($email == null){
-        
-    } else if($password == null || $comfirmPassword == null) {
-
-    }
+    $name = $_GET["name"];
+    $email = $_GET["email"];
+    $password = $_GET["password"];
+    $comfirmPassword = $_GET["confirm-password"];
 
     //encrypt password
     $password = md5($password);

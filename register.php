@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/login_register.css">
     </head>
     <body>
-        <form action="_register.php" method="post">
+        <form action="_register.php" method="get">
             <a href="" class="title">Cadastrar</a>
 
             <input type="text" name="name" placeholder="Nome">

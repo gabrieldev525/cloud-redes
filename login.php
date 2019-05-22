@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="css/login_register.css">
     </head>
     <body>
-        <form action="_login.php" method="post">
+        <form action="_login.php" method="get">
             <a href="" class="title">Login</a>
 
             <input type="email" name="email" id="" placeholder="Email">

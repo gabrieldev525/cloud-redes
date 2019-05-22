@@ -3,10 +3,10 @@
 
    require_once 'conn/connection.php';
 
-   $email = isset($_POST['email']) ? $_POST['email'] : null;
-   $password = isset($_POST['password']) ? $_POST['password'] : null;
+   $email = $_GET['email'];
+   $password = $_GET['password'];
 
-   // $password = md5($password);
+   $password = md5($password);
 
    //get the current user data
    $query = "SELECT * FROM users WHERE email='$email' AND password='$password';";
